@@ -1,0 +1,46 @@
+.button{
+    display: flex;
+    text-decoration:none;
+    transition: all 0.5s;
+
+    span.location{
+        display: inline-block;
+        text-decoration:none;
+        font-family:$tipography-title;
+        font-size: 20px;
+        font-weight: 800;
+        padding: 24px 32px 24px 32px;
+        background-color: $color-black;
+        color:white;
+        letter-spacing: 3.64px;
+    }
+    figure.arrow-icon{
+        width: 56px;
+        height: 72px;
+        background-color: $color-brown;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 10px;
+            
+            &.invert{
+                transform: rotate(180deg);
+            }
+            
+        }
+
+    }
+    &:hover{
+        span.location{
+            background-color: $color-brown;
+            transition: all 0.3s ease-in-out;
+        }
+        figure.arrow-icon{
+            background-color: $color-black;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+

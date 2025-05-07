@@ -1,0 +1,65 @@
+.footer{
+    position:absolute;
+    bottom: 0;
+    background-color: $color-black;
+    padding:48px 32px 48px 32px;
+    @include breakpoint(tablet){
+        padding: 56px 40px 56px 39px;
+        display:flex;
+        align-items: flex-start;
+        gap:65px;
+    }
+    @include breakpoint(desktopxl){
+        width: 100%;
+        padding-left: 65px;
+        padding-top: 80px;
+        padding-bottom:106px;
+        gap:140.5px;
+    }
+
+    &__logo{
+        width: 110.5px;
+        @include breakpoint(desktopxl){
+            width: 160px;
+        }
+    }
+    &__subtitle{
+        font-family: Outfit;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 38px;
+        color:white;
+        @include breakpoint(tablet){
+            width: 36.6%;
+            margin-top: 0;
+        }
+        @include breakpoint(desktopxl){
+            font-size: 18px;
+            line-height: 28px;
+            width: 430px;
+        }
+    }
+
+    &__social {
+        @include breakpoint(tablet){
+            margin-left: auto;
+        }
+        ul{
+            margin-top:35px;
+            list-style: none;
+            display: flex;
+            gap:20px;
+            @include breakpoint(tablet){
+                margin-top: 0;
+            }
+    
+            img{
+                width: 20px;
+            }
+        }
+        
+    }
+}
+
+

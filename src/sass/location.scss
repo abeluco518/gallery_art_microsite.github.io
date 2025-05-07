@@ -1,0 +1,88 @@
+@import './abstracts/abstracts';
+@import './vendors/vendors';
+@import './base/base';
+@import './components/components';
+@import './layout/layout';
+@import './pages/pages';
+@import './themes/themes';
+@import 'settings';
+
+.location{
+    &__back{
+        position:absolute;
+        top:0;
+        left:0;
+        @include breakpoint(tablet){
+            left:40px;
+        }
+
+    }
+    &__img{
+        width: 100%;
+        @include breakpoint(tablet){
+        }
+
+    }
+
+    &__content{
+        padding:48px 16px 56px 16px;
+        background-color: $color-black;
+        position:relative;
+        bottom:4px;
+
+        @include breakpoint(tablet){
+            height: 463px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-top:88px;
+            padding-left: 39px;
+            padding-right:40px;
+        }
+    }
+    &__title{
+        font-family: $tipography-title;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 45px;
+        color:$color-white;
+        margin-bottom: 48px;
+        @include breakpoint(tablet){
+            font-size: 55px;
+            line-height: 50px;
+            width:25%;
+            margin-bottom: 40%;
+            
+        }
+    }
+    &__subtitle{
+        font-family: $tipography-title;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+        color:$color-brown;
+        margin-bottom: 20px;
+        @include breakpoint(tablet){
+            width: 52%;
+        }
+
+        
+    }
+    &__adress{
+        @include body(S);
+        list-style: none;
+        color:$color-white;
+        margin-bottom:20px;
+    }
+
+    &__text{
+        @include body(S);
+        color:$color-white;
+        @include breakpoint(tablet){
+            width: 52%;
+        }
+    }
+
+
+}
+

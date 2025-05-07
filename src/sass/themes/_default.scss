@@ -1,0 +1,48 @@
+ * {
+    font-family: $roboto-font;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+
+body{
+    position:relative;
+    padding-bottom:475px;
+    @include breakpoint(tablet){
+        padding-bottom: 350px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    @include breakpoint(desktopxl){
+        min-width: 1440px;
+    }
+
+}
+
+body.location-page{
+    padding-bottom:336px;
+    padding-top: 0;
+    @include breakpoint(tablet){
+        padding-bottom: 210px;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+   
+}
+
+
