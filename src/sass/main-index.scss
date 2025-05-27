@@ -7,17 +7,17 @@
 @import './themes/themes';
 @import 'settings';
 
-#page{
+#home{
     @include breakpoint(desktopxl){
-        &::after{
+        &::before{
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 31%;
-            aspect-ratio: 540/968;
+            top: -190px;
+            left: -100px;
+            width: 40%;
+            height: 722.22px;
             background-color: $color-black;
-            z-index: -1;
+            z-index: -21;
         }
     }
     
@@ -37,16 +37,17 @@
         width: 100%;
         @include breakpoint(tablet){
             aspect-ratio: 437/700;
-            width: 56.5%;
+            width: 435px;
             position: absolute;
-            top:0;
+            top:-150px;
             left:0;
             z-index: -10;
         }
         @include breakpoint(desktopxl){
-            width: 37.5%;
-            aspect-ratio: 540/800;
+            width: 487.5px;
+            height: 722.22px;
             margin-left: 31%;
+            top:-190px;
         }
     }
 }
@@ -67,6 +68,7 @@
         column-gap: 17%;
         width: auto;
         margin-top:190px;
+        
     }
 
     
@@ -117,12 +119,13 @@
         padding-right:24px;
         display: flex;
         justify-content: space-between;
+    }
         @include breakpoint(desktopxl){
-            margin-top: 290px;
+            margin-top: 180px;
             margin-left: 149px;
             margin-right: 149px;
         }        
-    }
+    
     
     &__image{
         width: 100%;
