@@ -1,6 +1,14 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './', // correcto para repos tipo *.github.io
-});
-// <
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        location:'location.html'
+        // Añade aquí todos los html que quieras incluir
+      }
+    }
+  },
+  base: '/gallery_art_microsite.github.io/'
+})
